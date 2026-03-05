@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Ext_SearchLanguage",
+  "version": "1.0.0",
+  "description": "Enforces language and location query params on Google Search URLs.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ext_SearchLanguage"
+  }
+}
