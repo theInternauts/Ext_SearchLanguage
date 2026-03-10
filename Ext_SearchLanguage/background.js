@@ -93,17 +93,12 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
   });
 });
 
-chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message?.type !== 'applyRule') {
-    return;
+chrome.action.onClicked.addListener(async (tab) => {
+  const enabled = !(await getEnabled());
+  await chrome.storage.sync.set({ [STORAGE_KEY]: enabled });
+  await applyRule();
+
+  if (tab?.id) {
+    await chrome.tabs.reload(tab.id);
   }
-
-  applyRule()
-    .then(() => sendResponse({ ok: true }))
-    .catch((error) => {
-      console.error('Failed to apply rule from message', error);
-      sendResponse({ ok: false, error: String(error) });
-    });
-
-  return true;
 });
