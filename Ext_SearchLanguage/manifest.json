@@ -3,6 +3,12 @@
   "name": "Ext_SearchLanguage",
   "version": "1.0.0",
   "description": "Enforces language and location query params on Google Search URLs.",
+  "icons": {
+    "16": "icons/eagel_color.png",
+    "32": "icons/eagel_color.png",
+    "48": "icons/eagel_color.png",
+    "128": "icons/eagel_color.png"
+  },
   "permissions": [
     "storage",
     "declarativeNetRequest",
@@ -16,6 +22,12 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Ext_SearchLanguage"
+    "default_title": "Ext_SearchLanguage",
+    "default_icon": {
+      "16": "icons/eagel_color.png",
+      "32": "icons/eagel_color.png",
+      "48": "icons/eagel_color.png",
+      "128": "icons/eagel_color.png"
+    }
   }
 }

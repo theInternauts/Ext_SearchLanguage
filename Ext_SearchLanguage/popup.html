@@ -10,21 +10,28 @@
         padding: 16px;
         min-width: 180px;
         font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
       }
 
-      label {
+      #toggle {
+        background: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      #stateIcon {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 14px;
+        width: 48px;
+        height: 48px;
       }
     </style>
   </head>
   <body>
-    <label>
-      <input id="enabled" type="checkbox" />
-      Enabled
-    </label>
+    <button id="toggle" type="button" aria-pressed="false">
+      <img id="stateIcon" alt="Disabled" />
+    </button>
     <script src="popup.js"></script>
   </body>
 </html>
