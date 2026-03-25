@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "Enforces language and location query params on Google Search URLs.",
   "icons": {
-    "16": "icons/eagle_color.png",
-    "32": "icons/eagle_color.png",
-    "48": "icons/eagle_color.png",
-    "128": "icons/eagle_color.png"
+    "16": "icons/shield_enabled.png",
+    "32": "icons/shield_enabled.png",
+    "48": "icons/shield_enabled.png",
+    "128": "icons/shield_enabled.png"
   },
   "permissions": [
     "storage",
@@ -23,10 +23,10 @@
   "action": {
     "default_title": "Ext_SearchLanguage",
     "default_icon": {
-      "16": "icons/eagle_color.png",
-      "32": "icons/eagle_color.png",
-      "48": "icons/eagle_color.png",
-      "128": "icons/eagle_color.png"
+      "16": "icons/shield_enabled.png",
+      "32": "icons/shield_enabled.png",
+      "48": "icons/shield_enabled.png",
+      "128": "icons/shield_enabled.png"
     }
   }
 }

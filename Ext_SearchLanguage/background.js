@@ -1,16 +1,16 @@
 const STORAGE_KEY = 'enabled';
 const RULE_ID = 1;
 const ENABLED_ICON = {
-  16: 'icons/eagle_color.png',
-  32: 'icons/eagle_color.png',
-  48: 'icons/eagle_color.png',
-  128: 'icons/eagle_color.png'
+  16: 'icons/shield_enabled.png',
+  32: 'icons/shield_enabled.png',
+  48: 'icons/shield_enabled.png',
+  128: 'icons/shield_enabled.png'
 };
 const DISABLED_ICON = {
-  16: 'icons/eagle_outline.png',
-  32: 'icons/eagle_outline.png',
-  48: 'icons/eagle_outline.png',
-  128: 'icons/eagle_outline.png'
+  16: 'icons/shield_disabled.png',
+  32: 'icons/shield_disabled.png',
+  48: 'icons/shield_disabled.png',
+  128: 'icons/shield_disabled.png'
 };
 
 const enabledRule = {
